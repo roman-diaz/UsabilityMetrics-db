@@ -1,0 +1,13 @@
+{
+  "name": "DB-Migrations",
+  "builder": "nixpacks",
+  "buildCommand": "pip install -r requirements.txt",
+  "startCommand": "python scripts/init-db.py",
+  "variables": {
+    "DB_HOST": "${{ Postgres.PGHOST }}",
+    "DB_PORT": "${{ Postgres.PGPORT }}",
+    "DB_USER": "${{ Postgres.PGUSER }}",
+    "DB_PASSWORD": "${{ Postgres.PGPASSWORD }}",
+    "DB_NAME": "${{ Postgres.PGDATABASE }}"
+  }
+}
