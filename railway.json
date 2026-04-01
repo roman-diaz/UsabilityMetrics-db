@@ -1,6 +1,6 @@
 {
   "name": "DB-Migrations",
-  "builder": "nixpacks",
+  "builder": "railpack",
   "buildCommand": "pip install -r requirements.txt",
   "startCommand": "python scripts/init-db.py",
   "variables": {
