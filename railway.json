@@ -1,7 +1,5 @@
 {
   "name": "DB-Migrations",
-  "builder": "railpack",
-  "buildCommand": "pip install -r requirements.txt",
   "startCommand": "python scripts/init-db.py",
   "variables": {
     "DB_HOST": "${{ Postgres.PGHOST }}",
